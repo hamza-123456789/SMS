@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="right-section">
+        <div class="login-container">
+            <form [formGroup]="SignupForm" (ngSubmit)="onSubmit()">
+                <h2 class="login-title"><i class="fas fa-user-circle"></i> Admin Registration</h2>
+                <div class="form-control">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="First Name" formControlName="FirstName" required>
+                </div>
+                <div class="form-control">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Last Name" formControlName="LastName" required>
+                </div>
+                <div class="form-control">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Username" formControlName="username" required>
+                </div>
+                <div class="form-control">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email" formControlName="email" required>
+                </div>
+                <div class="form-control">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" placeholder="Password" formControlName="password" required>
+                </div>
+                <button type="submit" [disabled]="!SignupForm.valid">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

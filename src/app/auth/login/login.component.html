@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="left-section"></div>
+    <div class="right-section">
+        <div class="login-container">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <h2 class="login-title"><i class="fas fa-user-circle"></i> AMS</h2>
+                <div class="form-control">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Username" formControlName="username" required>
+                </div>
+                <div class="form-control">
+                    <i class="fas fa-lock icon"></i>
+                    <input type="password" placeholder="Password" formControlName="password">
+                </div>
+
+                <div class="social-login">
+                    <i class="fab fa-google social-icon"></i>
+                    <i class="fab fa-facebook-f social-icon"></i>
+                    <i class="fab fa-twitter social-icon"></i>
+                </div>
+                <button type="submit" [disabled]="!loginForm.valid">Login</button>
+                <div>
+                    <button type="submit" class="signup-button" (click)="Signup()" >Signup</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+<div class="container ">
+    <div class="left_sidebar">
+        <!-- <div class="close_hamburger_btn">
+            <i class='bx bx-x-circle'></i>
+        </div>
+        <div class="logo ">
+            <h2 >Dashboard</h2>
+        </div> -->
+        <!-- <div class="menu_items ">
+            <div class="menu_item ">
+                <i class='bx bx-message-rounded-dots'></i>
+                <p>Fees</p>
+                <i class="fa-regular fa-circle-2 "></i>
+            </div>
+            <div class="menu_item ">
+                <i class='bx bx-calendar'></i>
+                <p>Calender</p>
+            </div>
+            <div class="menu_item ">
+                <i class='bx bx-file-blank'></i>
+                <p>Database</p>
+            </div>
+            <div class="menu_item ">
+                <i class='bx bx-signal-4'></i>
+                <p>Attendance</p>
+            </div>
+            <div class="menu_item ">
+                <i class='bx bx-cog'></i>
+                <p>Settings</p>
+            </div>
+        </div> -->
+    </div>
+    <!-- <div class="main_content"> -->
+        <!-- <div class="left_right_sidebar_opener"> -->
+            <!-- <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div> -->
+            <!-- <div class="student">
+                <div class="profile_img">
+                    <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg" alt="profile img">
+                </div>
+                <div class="profile_name">
+                    <p>Kery Roy</p>
+                </div>
+            </div> -->
+        <!-- </div> -->
+        <!-- <div class="main_navbar">
+            <div class="search_box">
+                <i class='bx bx-search-alt-2'></i> <input type="text " placeholder="Search">
+            </div>
+            <div class="dark_mode_icon" onclick="darkMode()">
+                <i class='bx bx-moon'></i>
+                <i class='bx bx-sun'></i>
+            </div>
+        </div> -->
+        <!-- <div class="menu_item_name_and_filter "> -->
+            <!-- <div class="menu_item_name">
+                <h2>Database</h2>
+            </div> -->
+            <!-- <div class="filter_and_sort"> -->
+                <!-- <div class="sort sort_and_filter">
+                    <p>Sort</p>
+                    <i class='bx bx-sort-down'></i>
+                </div> -->
+                <!-- <div class="filter sort_and_filter">
+                    <p>Filter</p>
+                    <i class='bx bx-filter'></i>
+                </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="tabs">
+            <div class="three_dots">
+                <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+        </div> -->
+      <div class="row">
+        <div class="table">
+            <table class="table table-hover table-striped table-bordered dataTable registerTable dataTableASR" width="100%" width="100%">
+                <thead>
+                    <tr>
+                        <th style="width: max-width">ID</th>
+                        <th style="width: max-width">First Name</th>
+                        <th style="width: max-width">Last Name</th>
+                        <th style="width: max-width">UserName</th>
+                        <th style="width: max-width">Password</th>
+                        <th style="width: max-width">Email</th>
+                        <th style="width: max-width">Created Date</th>
+                        <th style="width: max-width">Status</th>
+                        <th style="width: max-width">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let value of Registereddata">
+                        <td style="width: max-width">{{ value.id }}</td>
+                        <td style="width: max-width" >{{ value.firstName }}</td>
+                        <td style="width: max-width" >{{ value.lastName }}</td>
+                        <td style="width: max-width" >{{ value.username }}</td>
+                        <td style="width: max-width">{{ value.password }}</td>
+                        <td style="width: max-width">{{ value.email }}</td>
+                        <td style="width: max-width">{{ value.createdDate }}</td>
+                        <td style="width: max-width">{{ value.isDeleted }}</td>
+                        <td style="width: 30%" class="d-flex align-items-center">
+                            <button class="btn btn-light btn-sm mr-1">Edit</button>
+                            <button class="btn btn-light btn-sm mr-1">View</button>
+                            <button class="btn btn-light btn-sm" (click)="DeleteUser(value.id)">Delete</button>
+                          </td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="right_sidebar "> -->
+        <!-- <div class="notification_and_name "> -->
+            <!-- <div class="close_btn ">
+                <i class='bx bx-x-circle'></i>
+            </div> -->
+            <!-- <div class="bell ">
+                <i class='bx bx-bell'></i>
+                <span></span>
+            </div> -->
+            <!-- <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg " alt="profile ">
+            <p>Kery Roy</p>
+            <i class='bx bx-chevron-down'></i> -->
+        <!-- </div> -->
+        <!-- <div class="profile ">
+            <div class="img ">
+                <img src="https://i.postimg.cc/g2M32zcz/image.png " alt="studentImg ">
+            </div> -->
+            <!-- <div class="name_and_class ">
+                <p>Ali Model School</p>
+                <span style="font-size: 10px;">We Are Educationist</span>
+            </div> -->
+            <!-- <div class="contact_info ">
+                <i class='bx bx-message-rounded-dots'></i>
+                <i class='bx bx-phone-call'></i>
+                <i class='bx bx-envelope'></i>
+            </div> -->
+            <!-- <div class="about ">
+                <h4>About</h4>
+                <p>BCA student studied at ABC School of Commerce and Computer studies. I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things; the more, the better.</p>
+            </div> -->
+    <!-- </div> -->
+</div>
